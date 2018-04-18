@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+import scrapy
+from douban.items import DoubanItem
+from scrapy.selector import Selector
+from scrapy.http import HtmlResponse
+class DoubanNovelSpider(scrapy.Spider):
+    name = 'douban_novel'
+    allowed_domains = ['douban.com']
+#    start_urls=['https://book.douban.com/tag/小说?start='+str(start)+'&type=T' for start in range(60,80,20)]
+    def start_requests(self):
+        start_urls=['https://book.douban.com/tag/小说?start='+str(start)+'&type=T' for start in range(0,200,20)]
+        for url in start_urls:
+            yield scrapy.Request(url,callback=self.parse)
+    def parse(self, response):
+        hrefs=response.xpath('//ul[@class="subject-list"]//li/div[@class="info"]/h2/a/@href').extract()
+        for href in hrefs:
+            yield scrapy.Request(href,callback=self.real_parse)
+    def real_parse(self,response):
+        item=DoubanItem()
+        item["novel_name"]=response.xpath('//*[@id="wrapper"]/h1/span/text()').extract()[0]
+        item["novel_writter"]=''.join(response.xpath('//*[@id="info"]/a[1]/text()').extract()[0].replace("\n",'').split())
+        item["novel_price"]=response.xpath('//*[@id="info"]//span[text()="定价:"]/following::text()[1]').extract()[0].strip()
+        item["novel_rating"]=response.xpath('//*[@id="interest_sectl"]//strong[@class="ll rating_num "]/text()').extract()[0].strip()+"分"
+        item["novel_rating_people_num"]=response.xpath('//span[@property="v:votes"]/text()').extract()[0]+"人评价"
+        item["novel_pub"]=response.xpath('//*[@id="info"]//span[text()="出版社:"]/following::text()[1]').extract()[0].strip()
+        item["novel_pub_date"]=response.xpath('//*[@id="info"]//span[text()="出版年:"]/following::text()[1]').extract()[0].strip()
+        yield item

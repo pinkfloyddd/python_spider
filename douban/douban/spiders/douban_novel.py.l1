@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+import scrapy
+from douban.items import DoubanItem
+from scrapy.selector import Selector
+from scrapy.http import HtmlResponse
+class DoubanNovelSpider(scrapy.Spider):
+    name = 'douban_novel'
+    allowed_domains = ['douban.com']
+    start_urls=['https://book.douban.com/tag/小说?start='+str(start)+'&type=T' for start in range(60,80,20)]
+    def parse(self,response):
+        item=DoubanItem()
+        novel_info_list=response.xpath('//li[@class="subject-item"]/div[@class="info"]/div[@class="pub"]/text()').extract()
+        novel_price_list=[]
+        novel_writter_list=[]
+        novel_pub_list=[]
+        novel_pub_date_list=[]
+        for novel_info_orgin in novel_info_list:
+            novel_info = novel_info_orgin.replace('\n','').strip()
+            novel_writter=novel_info.split('/')[0]
+            novel_pub=novel_info.split('/')[-3]
+            novel_pub_date=novel_info.split('/')[-2]
+            novel_price=novel_info.split('/')[-1]
+#            novel_price_list.append(novel_price)
+#            novel_writter_list.append(novel_writter)
+#            novel_pub_list.append(novel_pub)
+#            novel_pub_date_list.append(novel_pub_date)
+            yield novel_price
+            yield novel_writte
+            yield novel_pub
+            yield novel_pub_date
+        item["novel_writter"]=novel_writter
+        item["novel_price"]=novel_price
+        item["novel_pub"]=novel_pub
+        item["novel_pub_date"]=novel_pub_date
+        novel_rating_people_nums_list=response.xpath('//div[@class="star clearfix"]/span[3]/text()').extract()
+        novel_rating_people=[]
+        for novel_rating_people_nums in novel_rating_people_nums_list:
+            novel_rating_people.append(novel_rating_people_nums.replace('\n','').strip().strip('(').strip(')'))
+            yield novel_rating_people
+        item["novel_rating_people_num"]=novel_rating_people
+        item["novel_rating"]=response.xpath('//span[@class="rating_nums"]/text()').extract()
+        item["novel_name"]=response.xpath('//li[@class="subject-item"]/div[@class="info"]/h2/a[1]/@title').extract()
+        yield item
