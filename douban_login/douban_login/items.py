@@ -8,7 +8,9 @@
 import scrapy
 
 
-class DoubanScrapyFenbushiItem(scrapy.Item):
+class DoubanLoginItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
     name = scrapy.Field()
     type = scrapy.Field()
     date = scrapy.Field()

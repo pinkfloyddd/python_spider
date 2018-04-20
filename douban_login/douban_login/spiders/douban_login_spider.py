@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
-
 import scrapy
-from douban_scrapy_fenbushi.items import DoubanScrapyFenbushiItem
-import json
 import requests
 from PIL import Image
 from scrapy.http import FormRequest
+from douban_login.items import DoubanLoginItem
 import fake_useragent
-
-class DoubanYinshiSpider(scrapy.Spider):
-    name = 'douban_yinshi'
+class DoubanLoginSpiderSpider(scrapy.Spider):
+    name = 'douban_login_spider'
     allowed_domains = ['douban.com']
     ua = fake_useragent.UserAgent()
-    UserAgent = ua.random
-    header = {'User-Agent':UserAgent}
+    USER_AGENT = ua.random
+    header = {"User-Agent": USER_AGENT}
     def start_requests(self):
         urls = 'https://accounts.douban.com/login'
         return [scrapy.Request(url=urls,callback=self.login_parse,meta={'cookiejar':1},headers=self.header)]
@@ -23,42 +20,30 @@ class DoubanYinshiSpider(scrapy.Spider):
         if captcha_url != []:
             print('有验证码登陆')
             captcha_get = requests.get(captcha_url[0])
-            with open('captcha.jpg', 'wb') as fp:
+            with open('captcha.jpg','wb') as fp:
                 fp.write(captcha_get.content)
                 fp.close()
             captcha_img = Image.open('captcha.jpg')
             captcha_img.show()
             captcha_vale = input('请输入验证码：')
             captcha_img.close()
-            data = {'form_email': '15026435190', 'form_password': 'zhaoye861227', 'redir': 'https://douban.com','captcha-solution': captcha_vale}
+            data = {'form_email':'the_who@126.com','form_password':'zhaoye861227','redir':'https://douban.com','captcha-solution':captcha_vale}
         else:
             print('无验证码登陆')
-            data = {'form_email': '15026435190', 'form_password': 'zhaoye861227', 'redir': 'https://douban.com'}
-        return FormRequest.from_response(response, meta={'cookiejar': response.meta["cookiejar"]}, formdata=data,callback=self.after_login,headers=self.header)
+            data = {'form_email':'the_who@126.com','form_password':'zhaoye861227','redir':'https://douban.com'}
+        return FormRequest.from_response(response,meta={'cookiejar':response.meta["cookiejar"]},formdata=data,callback=self.after_login,headers=self.header)
     def after_login(self,response):
+        print(response.meta)
         title = response.xpath('//title/text()').extract()[0]
-        if '登录豆瓣' in title:
-            print('登录失败')
+        if '登陆豆瓣' in title:
+            print('登陆失败')
         else:
-            print('登录成功 ')
+            print('登陆成功 ')
             print('开始爬取')
-            # print(response.headers.getlist("Set-Cookie"))
-            # print(response.request.headers)
-            start = 0
-            while True:
-                urls = ['https://movie.douban.com/j/new_search_subjects?sort=T&range=0,10&tags=&start=' + str(start)]
-                for url in urls:
-                    j1 = json.loads(requests.get(url).text)
-                    l1s = j1["data"]
-                    if l1s is None:
-                        break
-                    else:
-                        for l1 in l1s:
-                            href=l1["url"]
-                            yield scrapy.Request(url=href,meta={'cookiejar':True},callback=self.detail_parse,headers=self.header)
-                            start += 1
-    def detail_parse(self, response):
-        item = DoubanScrapyFenbushiItem()
+        url = 'https://movie.douban.com/subject/1292052/'
+        yield scrapy.Request(url=url,meta={'cookiejar':response.meta["cookiejar"]},callback=self.details_parse)
+    def details_parse(self,response):
+        item = DoubanLoginItem()
         item["name"] = response.xpath('//*[@id="content"]/h1/span[1]/text()').extract()[0]
         item["date"] = response.xpath('//*[@id="content"]/h1/span[2]/text()').extract()[0].strip('(').strip(')')
         item["type"] = response.xpath('//div[@id="info"]/span[@property="v:genre"]/text()').extract()[0]

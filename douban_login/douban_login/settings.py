@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for douban_scrapy_fenbushi project
+# Scrapy settings for douban_login project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -8,17 +8,19 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-BOT_NAME = 'douban_scrapy_fenbushi'
+BOT_NAME = 'douban_login'
 
-SPIDER_MODULES = ['douban_scrapy_fenbushi.spiders']
-NEWSPIDER_MODULE = 'douban_scrapy_fenbushi.spiders'
+SPIDER_MODULES = ['douban_login.spiders']
+NEWSPIDER_MODULE = 'douban_login.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'douban_scrapy_fenbushi (+http://www.yourdomain.com)'
-# USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+#USER_AGENT = 'douban_login (+http://www.yourdomain.com)'
+# USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1944.0 Safari/537.36'
+
+
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,14 +49,14 @@ COOKIES_DEBUG = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'douban_scrapy_fenbushi.middlewares.DoubanScrapyFenbushiSpiderMiddleware': 543,
+#    'douban_login.middlewares.DoubanLoginSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-#    'douban_scrapy_fenbushi.middlewares.MyRandomUserAgentMiddleware': 543,
-# }
+#DOWNLOADER_MIDDLEWARES = {
+#    'douban_login.middlewares.DoubanLoginDownloaderMiddleware': 543,
+#}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -64,9 +66,9 @@ COOKIES_DEBUG = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'douban_scrapy_fenbushi.pipelines.DoubanScrapyFenbushiPipeline': 300,
-}
+#ITEM_PIPELINES = {
+#    'douban_login.pipelines.DoubanLoginPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

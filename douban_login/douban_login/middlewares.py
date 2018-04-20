@@ -6,15 +6,9 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-from fake_useragent import UserAgent
-from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
-# class MyRandomUserAgentMiddleware(UserAgentMiddleware):
-#     def __init__(self,user_agent=''):
-#         self.user_agent = user_agent
-#     def process_request(self,request,spider):
-#         ua = UserAgent()
-#         request.headers['User-Agent'] = ua.random
-class DoubanScrapyFenbushiSpiderMiddleware(object):
+
+
+class DoubanLoginSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -62,7 +56,7 @@ class DoubanScrapyFenbushiSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class DoubanScrapyFenbushiDownloaderMiddleware(object):
+class DoubanLoginDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.

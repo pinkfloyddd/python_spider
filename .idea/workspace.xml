@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ff16d3e-8639-4c82-950f-aadd9a252b40" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py" beforeDir="false" afterPath="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,17 +21,17 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="douban_yinshi.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="douban_yinshi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="305">
+              <caret line="57" column="99" selection-start-line="57" selection-start-column="99" selection-end-line="57" selection-end-column="99" />
               <folding>
                 <element signature="e#25#38#0" expanded="true" />
               </folding>
@@ -40,8 +42,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+            <state relative-caret-position="1102">
+              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -49,8 +51,8 @@
       <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="228">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="e#169#195#0" expanded="true" />
               </folding>
@@ -58,13 +60,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="589">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <element signature="e#193#206#0" expanded="true" />
+                <element signature="e#193#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,24 +74,35 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cookie</find>
+      <find>Pipe</find>
+      <find>cookies</find>
+      <find>pipe</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py" />
-        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py" />
-        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py" />
-        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py" />
+        <option value="$PROJECT_DIR$/douban_login/douban_login/items.py" />
+        <option value="$PROJECT_DIR$/douban_login/douban_login/settings.py" />
+        <option value="$PROJECT_DIR$/douban_login/douban_login/spiders/douban_login_spider.py" />
         <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py" />
+        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py" />
+        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py" />
+        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py" />
+        <option value="$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="548" />
-    <option name="y" value="8" />
-    <option name="width" value="1320" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="880" />
+    <option name="y" value="125" />
+    <option name="width" value="1290" />
     <option name="height" value="960" />
   </component>
   <component name="ProjectView">
@@ -108,6 +121,42 @@
             <path>
               <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban" type="462c0819:PsiDirectoryNode" />
+              <item name="douban" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban" type="462c0819:PsiDirectoryNode" />
+              <item name="douban" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban_login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban_login" type="462c0819:PsiDirectoryNode" />
+              <item name="douban_login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban_login" type="462c0819:PsiDirectoryNode" />
+              <item name="douban_login" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
               <item name="douban_scrapy_fenbushi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -122,11 +171,6 @@
               <item name="douban_scrapy_fenbushi" type="462c0819:PsiDirectoryNode" />
               <item name="douban_scrapy_fenbushi" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,24 +208,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="439" y="7" width="1056" height="768" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24952015" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16380449" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3293944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3293944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32874617" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32874617" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -195,6 +239,179 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="99" lean-forward="true" selection-start-line="57" selection-start-column="99" selection-end-line="57" selection-end-column="99" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="78" lean-forward="true" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="131" lean-forward="true" selection-start-line="52" selection-start-column="131" selection-end-line="52" selection-end-column="131" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="47" selection-start-line="2" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -243,46 +460,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
+    <entry file="file://$PROJECT_DIR$/douban_login/douban_login/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="361">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
+    <entry file="file://$PROJECT_DIR$/douban_login/douban_login/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="e#25#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="380">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_login/douban_login/spiders/douban_login_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+        <state relative-caret-position="1102">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="228">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="e#169#195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban/douban/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="589">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
-            <element signature="e#193#206#0" expanded="true" />
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/douban_scrapy_fenbushi/douban_scrapy_fenbushi/spiders/douban_yinshi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="57" column="99" selection-start-line="57" selection-start-column="99" selection-end-line="57" selection-end-column="99" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
